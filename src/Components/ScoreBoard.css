@@ -1,0 +1,13 @@
+.total__score {
+  background: #e1e1e1;
+  display: inline-block;
+  height: 3.875em;
+  position: absolute;
+  top: 0;
+  width: 4.375em;
+}
+.total__score div {
+  bottom: 0;
+  padding: 10px;
+  position: absolute;
+}
