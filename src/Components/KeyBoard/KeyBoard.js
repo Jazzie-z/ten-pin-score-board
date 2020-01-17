@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import "./KeyBoard.css";
 
 function KeyBoard({ updateScore }) {
-  // var [values, setValues] = useState(KEY_VALUES);
   const keys = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   const onClickHandler = e => {
