@@ -1,3 +1,6 @@
+.outer__wrap {
+  display: inline-block;
+}
 .card__wrapper {
   background: #fb4747;
   color: white;
@@ -6,14 +9,19 @@
   font-weight: bold;
   position: relative;
   width: 4.5em;
+  white-space: pre;
+  box-sizing: border-box;
+  border-left: 0.125em solid #a20f0f;
 }
 .first__roll {
   padding: 0.312em 0 0.312em 0.938em;
+  height: 1.313em;
 }
 
 .inner__card {
   background: #e1e1e1;
   color: black;
+  height: 1.313em;
   width: 1.875em;
   position: absolute;
   text-align: center;
@@ -25,4 +33,9 @@
 .frame__score {
   text-align: center;
   padding: 0.312em 0;
+  height: 1.313em;
+}
+
+h2 {
+  text-align: center;
 }

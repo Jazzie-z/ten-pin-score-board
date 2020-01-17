@@ -3,7 +3,7 @@ import "./ScoreCard.css";
 
 function ScoreCard({ score, total, index }) {
   return (
-    <div className={"wrap"}>
+    <div className={"outer__wrap"}>
       <h2>{index}</h2>
       <div className={"card__wrapper"}>
         <div className={"first__roll"}>{score.primary}</div>

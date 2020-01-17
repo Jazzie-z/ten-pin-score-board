@@ -1,4 +1,5 @@
 import React from "react";
+import "./KeyBoard.css";
 
 function KeyBoard({ updateScore }) {
   // var [values, setValues] = useState(KEY_VALUES);
@@ -10,9 +11,10 @@ function KeyBoard({ updateScore }) {
   };
 
   return (
-    <div>
+    <div className={"keyboard"}>
       {keys.map((item, index) => (
         <button
+          className={"button"}
           key={`${item}-${index}`}
           onClick={onClickHandler}
           value={item}

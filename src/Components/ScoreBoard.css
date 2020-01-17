@@ -1,13 +1,31 @@
-.total__score {
+.score__board {
+  text-align: center;
+}
+
+.card__total {
   background: #e1e1e1;
   display: inline-block;
   height: 3.875em;
-  position: absolute;
-  top: 0;
   width: 4.375em;
+  text-align: center;
+  padding: 1.25em;
+  box-sizing: border-box;
+  font-weight: bold;
 }
-.total__score div {
-  bottom: 0;
-  padding: 10px;
+.card__title {
+  font-weight: bold;
+  text-align: center;
+  padding: 0.267em 0;
+}
+.total__score__card {
+  height: 8.3125em;
+  display: inline-block;
   position: absolute;
+}
+
+h1 {
+  text-align: center;
+}
+.wrapper {
+  position: relative;
 }
