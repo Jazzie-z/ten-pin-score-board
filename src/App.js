@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ScoreBoard from "./Components/ScoreBoard";
-import KeyBoard from "./Components/KeyBoard";
+import ScoreBoard from "./Components/ScoreBoard/";
+import KeyBoard from "./Components/KeyBoard/";
+
 import {
   MAX_ROLLS,
   GENERAL_ROLL_LIMIT,

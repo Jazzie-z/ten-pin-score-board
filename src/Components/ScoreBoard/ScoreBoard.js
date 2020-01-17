@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ScoreCard from "./ScoreCard";
+import ScoreCard from "../ScoreCard/";
 import "./ScoreBoard.css";
 
 function ScoreBoard({ rolls, total }) {
