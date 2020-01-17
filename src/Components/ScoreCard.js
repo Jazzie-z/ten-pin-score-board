@@ -1,13 +1,20 @@
 import React from "react";
-import styles from "./ScoreCard.css";
-function ScoreCard() {
+import "./ScoreCard.css";
+
+function ScoreCard({ score, total, index }) {
   return (
-    <div className={"card__wrapper"}>
-      <div className={"first__roll"}>9</div>
-      <div className={"inner__card "}>-</div>
-      <div className={"frame__score"}>9</div>
+    <div className={"wrap"}>
+      <h2>{index}</h2>
+      <div className={"card__wrapper"}>
+        <div className={"first__roll"}>{score.primary}</div>
+        <div className={"inner__card "}>{score.secondary}</div>
+        <div className={"frame__score"}>{total >= 0 ? total : " "}</div>
+      </div>
     </div>
   );
 }
 
+ScoreCard.defaultProps = {
+  score: {}
+};
 export default ScoreCard;
