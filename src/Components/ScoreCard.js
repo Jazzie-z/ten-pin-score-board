@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./ScoreCard.css";
 
 function ScoreCard({ score, total, index }) {
@@ -17,4 +18,11 @@ function ScoreCard({ score, total, index }) {
 ScoreCard.defaultProps = {
   score: {}
 };
+
+ScoreCard.propTypes = {
+  score: PropTypes.object,
+  total: PropTypes.number,
+  index: PropTypes.number
+};
+
 export default ScoreCard;

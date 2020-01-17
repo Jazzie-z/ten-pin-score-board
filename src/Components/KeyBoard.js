@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./KeyBoard.css";
 
 function KeyBoard({ updateScore }) {
@@ -26,5 +27,9 @@ function KeyBoard({ updateScore }) {
     </div>
   );
 }
+
+KeyBoard.propTypes = {
+  updateScore: PropTypes.func
+};
 
 export default KeyBoard;

@@ -16,6 +16,7 @@
 .first__roll {
   padding: 0.312em 0 0.312em 0.938em;
   height: 1.313em;
+  text-align: left;
 }
 
 .inner__card {

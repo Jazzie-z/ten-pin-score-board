@@ -1,0 +1,81 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "extends": [
+        "prettier",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier",
+        "react-hooks",
+        "import"
+    ],
+    "settings": {
+        "react": {
+            "version": "latest"
+        },
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": [
+                    "node_modules",
+                    "src/"
+                ]
+            }
+        }
+    },
+    "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react/state-in-constructor": [
+            1,
+            "always"
+        ],
+        "constructor-super": "warn",
+        "import/imports-first": [
+            "error",
+            "absolute-first"
+        ],
+        "import/newline-after-import": "warn",
+        "no-const-assign": "error",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-underscore-dangle": 0,
+        "no-unreachable": "warn",
+        "prettier/prettier": "error",
+        "react/prop-types": "warn",
+        "react/jsx-curly-newline": 0,
+        "valid-typeof": "warn",
+        "no-console": [
+            "warn",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": true,
+                "ignorePropertyModificationsFor": [
+                    "draft"
+                ]
+            }
+        ]
+    }
+}

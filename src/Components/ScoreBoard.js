@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ScoreCard from "./ScoreCard";
 import "./ScoreBoard.css";
 
@@ -30,5 +31,10 @@ function ScoreBoard({ rolls, total }) {
     </div>
   );
 }
+
+ScoreBoard.propTypes = {
+  rolls: PropTypes.array,
+  total: PropTypes.array
+};
 
 export default ScoreBoard;
