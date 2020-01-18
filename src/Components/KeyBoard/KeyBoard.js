@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./KeyBoard.css";
 
-function KeyBoard({ updateScore }) {
+function KeyBoard({ updateRolls }) {
   const keys = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   const onClickHandler = e => {
     let value = parseInt(e.target.value);
-    updateScore(value);
+    updateRolls(value);
   };
 
   return (
@@ -28,7 +28,7 @@ function KeyBoard({ updateScore }) {
 }
 
 KeyBoard.propTypes = {
-  updateScore: PropTypes.func
+  updateRolls: PropTypes.func
 };
 
 export default KeyBoard;

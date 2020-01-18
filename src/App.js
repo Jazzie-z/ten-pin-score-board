@@ -24,6 +24,7 @@ function App() {
     return true;
   };
 
+  // helper functions
   const isStrike = roll => roll === MAX_SCORE;
   const isFirstRoll = () => rolls.length % MAX_ROLLS_PER_FRAME === 0;
   const isSecondRoll = () =>
@@ -66,7 +67,7 @@ function App() {
     return rolls[0] + (rolls[1] || 0) + (bonus[0] || 0);
   };
 
-  useEffect(() => {
+  const updateScore = () => {
     let scores = [];
     var sum = 0;
     for (var index = 0; index < rolls.length; index += MAX_ROLLS_PER_FRAME) {
@@ -84,9 +85,11 @@ function App() {
       scores.push(sum);
     }
     setScore(scores);
-  }, [rolls]);
+  };
 
-  const updateScore = value => {
+  useEffect(updateScore, [rolls]);
+
+  const updateRolls = value => {
     if (isNextFrameAvailble() && isRollValid(value)) {
       setRolls([...rolls, value]);
     }
@@ -106,7 +109,7 @@ function App() {
   return (
     <React.Fragment>
       <ScoreBoard rolls={getTransformedData(rolls)} total={score} />
-      <KeyBoard updateScore={updateScore} rolls={rolls} />
+      <KeyBoard updateRolls={updateRolls} rolls={rolls} />
     </React.Fragment>
   );
 }
