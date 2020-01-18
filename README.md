@@ -9,4 +9,4 @@ This is a sample application to demonstrate the score-board mechanism of classic
 ## Unit Test
 Each components is testable. To run the test, type `npm test` in CLI.
 ## TestCoverage
-Each unit test covers all the 100% branch and lines of codes. To see the report, type `npm run test:coverage`
+Each unit test covers almost 100% branch and lines of codes. To see the report, type `npm run test:coverage`
